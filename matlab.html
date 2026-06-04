@@ -38,7 +38,7 @@
         }
 
         li {
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         a {
@@ -53,6 +53,11 @@
         .section {
             margin-bottom: 30px;
         }
+
+        .back-link {
+            margin-bottom: 20px;
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -61,23 +66,33 @@
 
 <div class="container">
 
+    <!-- Back link -->
+    <a href="index.html" class="back-link">
+        &#8592; Back to home
+    </a>
+
     <div class="section">
         <h2>Fixed Income</h2>
         <ul>
-            <li><a href="matlab/fixed_income/bond_pricing.m">Bond pricing</a></li>
+            <li>
+                <a href="matlab/fixed_income/bond_pricing.m">
+                    Bond pricing
+                </a>
+            </li>
         </ul>
     </div>
 
-  
     <div class="section">
         <h2>Utilities</h2>
         <ul>
-           <li>
-    <a href="matlab/data/getYahooData.m"><strong>getYahooData</strong></a><br>
-    <span style="color: #555;">
-        Function to retrieve financial data from Yahoo and load it into MATLAB table format.
-    </span>
-</li>
+            <li>
+                <a href="matlab/data/getYahooData.m">
+                    <strong>getYahooData</strong>
+                </a><br>
+                <span style="color: #555;">
+                    Function to retrieve financial data from Yahoo and load it into MATLAB table format.
+                </span>
+            </li>
         </ul>
     </div>
 
