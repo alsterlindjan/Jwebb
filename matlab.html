@@ -38,7 +38,7 @@
         }
 
         li {
-            margin-bottom: 12px;
+            margin-bottom: 18px;
         }
 
         a {
@@ -58,6 +58,13 @@
             margin-bottom: 20px;
             display: block;
         }
+
+        /* New spacing class for descriptions */
+        .description {
+            display: block;
+            margin-top: 8px;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -76,7 +83,7 @@
         <ul>
             <li>
                 <a href="matlab/fixed_income/Nelson_Siegel_Svensson.m">
-                    Nelson Siegel Svensson, duration weighted (comming soon)
+                    Nelson Siegel Svensson, duration weighted (coming soon)
                 </a>
             </li>
         </ul>
@@ -88,8 +95,8 @@
             <li>
                 <a href="matlab/data/getYahooData.m">
                     <strong>getYahooData</strong>
-                </a><br>
-                <span style="color: #555;">
+                </a>
+                <span class="description">
                     Function to retrieve financial data from Yahoo and load it into MATLAB table format.
                 </span>
             </li>
