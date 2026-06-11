@@ -100,7 +100,7 @@ Face=100;                  %Face value
 yrs=365;                   
 
 %% Optim by non-linear least squares
- b=[3.0, 1.0, 1.0, 1.0, 1.0, 1.0];              %starting values
+ b=[3.0, -1.0, 1.0, 0.0, 1.0, 1.0];              %starting values
  lb=[-1, -100, -100, -100,  0.0001,  0.0001];     %lower bound
  ub=[ 10,  100,  100,  100, 50, 50];              %upper bound
  
