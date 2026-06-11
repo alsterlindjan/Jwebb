@@ -65,8 +65,9 @@ PX_last=[99.89900;99.42800;99.56000;98.91000;98.38300;97.28600; ...
  end 
 
  CalcYield(ii) = y;
- Dur(ii) = ...
-     bnddury(CalcYield(ii)/100,coup(ii)/100,Settle(ii,:),Maturity(ii,:),1);
+ % price duration
+ Dur(ii) = ...    
+     bnddurp(PX_last(ii), coup(ii)/100, Settle(ii,:), Maturity(ii,:), 1);
  end
 
 % data end weights --------------------------------------------------------
@@ -84,8 +85,9 @@ switch method
     w=(1 ./ ( Dur.^2 ));
     
     case 'dv01'
-    data=PX_last;    
-    w=(1 ./ ( (PX_last.*Dur).^2 ));
+    data=PX_last;
+    DV01 = PX_last .* Dur * 1e-4;
+    w=(1 ./ ( DV01.^2 ));
 end
 
 
