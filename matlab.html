@@ -64,6 +64,16 @@
             margin-top: 8px;
             color: #555;
         }
+
+        /* Sub-list styling */
+        ul ul {
+            margin-top: 10px;
+            padding-left: 25px;
+        }
+
+        ul ul li {
+            margin-bottom: 12px;
+        }
     </style>
 </head>
 <body>
@@ -80,40 +90,46 @@
         <h2>Fixed Income</h2>
         <ul>
 
+            <!-- Main file -->
             <li>
                 <a href="matlab/fixed_income/NSS_estim.m">
                     <strong>NSS_estim</strong>
                 </a>
                 <span class="description">
-                    Estimating Nelson Siegel Svensson (NSS) using various numerical methods.
+                    Main script for estimating Nelson-Siegel-Svensson (NSS) yield curve parameters using different numerical methods.
                 </span>
-            </li>
 
-            <li>
-                <a href="matlab/fixed_income/LSQfit.m">
-                    <strong>LSQfit</strong>
-                </a>
-                <span class="description">
-                    Matlab nonlinear least squares calibration of NSS parameters.
-                </span>
-            </li>
+                <!-- Sub-files -->
+                <ul>
 
-            <li>
-                <a href="matlab/fixed_income/discflow.m">
-                    <strong>discflow</strong>
-                </a>
-                <span class="description">
-                    Calculates discounted cash flows for bonds (used in LSQfit).
-                </span>
-            </li>
+                    <li>
+                        <a href="matlab/fixed_income/LSQfit.m">
+                            <strong>LSQfit</strong>
+                        </a>
+                        <span class="description">
+                            Performs nonlinear least squares calibration of NSS parameters to observed market prices.
+                        </span>
+                    </li>
 
-            <li>
-                <a href="matlab/fixed_income/NSS.m">
-                    <strong>NSS</strong>
-                </a>
-                <span class="description">
-                    Defines the NSS functional form for the continuous spot rate curve (used in discflow.m).
-                </span>
+                    <li>
+                        <a href="matlab/fixed_income/discflow.m">
+                            <strong>discflow</strong>
+                        </a>
+                        <span class="description">
+                            Calculates discounted cash flows for bonds using the NSS spot rate curve.
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href="matlab/fixed_income/NSS.m">
+                            <strong>NSS</strong>
+                        </a>
+                        <span class="description">
+                            Implements the Nelson-Siegel-Svensson functional form for the continuous spot rate curve.
+                        </span>
+                    </li>
+
+                </ul>
             </li>
 
         </ul>
