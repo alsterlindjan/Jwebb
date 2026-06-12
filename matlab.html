@@ -135,6 +135,55 @@
         </ul>
     </div>
 
+<div class="section">
+    <h2>FX Options</h2>
+    <ul>
+
+        <!-- Main file -->
+        <li>
+            <a href="matlab/fxoption/FXoptionPDF.m">
+                <strong>FXoptionPDF</strong>
+            </a>
+            <span class="description">
+                Computes the implied probability distribution for an FX rate using spline interpolation of volatility in delta space (Bloomberg-style approach).
+            </span>
+
+            <!-- Sub-files -->
+            <ul>
+
+                <li>
+                    <a href="matlab/fxoption/smile_delta.m">
+                        <strong>smile_delta</strong>
+                    </a>
+                    <span class="description">
+                        Maps strike to implied volatility via delta-based interpolation of the volatility smile.
+                    </span>
+                </li>
+
+                <li>
+                    <a href="matlab/fxoption/bscall2.m">
+                        <strong>bscall2</strong>
+                    </a>
+                    <span class="description">
+                        Garman-Kohlhagen pricing function for FX call options.
+                    </span>
+                </li>
+
+                <li>
+                    <a href="matlab/fxoption/hessian.m">
+                        <strong>hessian</strong>
+                    </a>
+                    <span class="description">
+                        Computes the second derivative numerically to extract the implied density.
+                    </span>
+                </li>
+
+            </ul>
+        </li>
+
+    </ul>
+</div>
+    
     <div class="section">
         <h2>Utilities</h2>
         <ul>
